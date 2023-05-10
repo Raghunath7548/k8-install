@@ -5,7 +5,6 @@
 ### How to provision EKS Cluster?
 
 Below software are mandatory to provision EKS Cluster.
-
 * Eksctl
 * AWS CLI V2
 * Kubectl
@@ -67,4 +66,8 @@ eksctl create cluster --config-file=[file-name].yaml
 **NOTE:** Don't forget to delete the cluster.
 ```
 eksctl delete cluster --config-file=[file-name].yaml
-```
+
+
+to access pod
+
+kubectl exec -it multiple -c sidecar -- bash
